@@ -1,0 +1,44 @@
+footer {
+    font-family: "DM Sans";
+    color: #3B3B3B;
+    margin: 0 auto;
+    width: 80%;
+}
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: start;
+}
+.box-services {
+    padding: 20px;
+}
+
+
+.box-services li {
+    padding: 10px 0;
+    list-style: none;
+}
+
+.box-logo p {
+    padding: 10px 0;
+}
+
+.box-logo img {
+    padding: 10px 0;
+}
+
+@media only screen and (min-width: 375px) {
+    .box-copyright {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .box-logo-copyright {
+        display: none;
+    }
+    .container-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

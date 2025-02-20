@@ -1,0 +1,212 @@
+.intrigate {
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intrigate-title {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+.intrigate-title h1 {
+    font-size: 48px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.intrigate-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.intrigate-list li {
+    list-style: none;
+    /* border: 1px solid #3B3B3B; */
+    border-radius: 20px;
+    width: 276px;
+    height: 120px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 2.7rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #43434412;
+    filter: drop-shadow(10px 10px 10px #43434412);
+}
+
+.intrigate-list li:hover {
+    border: #FF7342; 
+    background-color: #FF7342;
+    ;
+}
+
+.pricing {
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0;
+    background: #F9F9F9;
+    padding: 20px;
+}
+
+.pricing-plan {
+    list-style: none;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 80%; */
+}
+
+.pricing-plan li {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.pricing-plan li:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #43434412;
+    filter: drop-shadow(10px 10px 10px #43434412);
+}
+
+.pricing-plan li button {
+    color: #FFFFFF;
+    background-color: #FFD167;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.pricing-plan li button:hover {
+    background-color: #FF7342;
+}
+
+.pricing-plan h1 {
+    font-size: 48px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.pricing-plan h1 span {
+    font-size: 16px;
+    padding: 1rem;
+    color: #5A7184;
+}
+
+.pricing-plan p {
+    padding: 10px 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FF7342;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FF7342;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.pricing-title {
+    justify-items: center;
+}
+
+.pricing-title h1{
+    font-size: 48px;
+}
+
+.round-switch {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.bg-intrigate-pricing-1 {
+    background-color: #F9F9F9;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .intrigate-title h1{
+        font-size: 24px;
+        width: 60%;
+    }
+    .intrigate-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pricing-plan {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
