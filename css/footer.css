@@ -39,6 +39,11 @@ footer {
     }
     .container-footer {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;   
+    }
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 10px;
     }
 }

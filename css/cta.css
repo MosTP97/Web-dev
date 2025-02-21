@@ -1,0 +1,86 @@
+.CTA {
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.CTA-Box {
+    background-color: #669FF6;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.CTA-Box-Title h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.CTA-Box-Title p {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.CTA-Box-Email {
+    width: 35%;
+}
+
+form {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+input[type=email] {
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 15px;
+}
+
+input[type=submit] {
+    color: #FFFFFF;
+    background-color: #FF7342;
+    border-radius: 4px;
+    border: none;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    .CTA-Box-Title {
+        width: 100%;
+    }
+
+    .CTA-Box-Title h1 {
+        font-size: 20px;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .CTA-Box-Title p {
+        font-size: 14px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .CTA-Box-Email {
+        width: 90%;
+    }
+    .CTA {
+        width: 100%;
+    }
+}
